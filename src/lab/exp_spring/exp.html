@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="exp.js"></script>
+	<link rel="stylesheet" href="exp.css">
+</head>
+<body onload="startAnimation()">
+	<div class="container" id="con">
+  <img id="im1" src="./images/blue.png">
+  <button id="bt1" onclick="restart()">Restart</button>
+  <button id="bt2" onclick="start_stop()">Start</button>
+  <!-- <button id="bt3">Graph</button>	 -->
+  <img id="im2" src="./images/restart.png">
+  <img id="im3" src="./images/start.png">
+  <!-- <img id="im4" src="./images/show_graph.png"> -->
+	</div>
+	<div id="botbox">
+    <input type="radio" name="edit" value="Turns">No Of Turns</input>
+    <input type="radio" name="edit" value="Material">Width Of Material</input>
+    <input type="radio" name="edit" value="Spring">Width Of Spring</input>
+    <input type="radio" name="edit" value="Constant">Spring Constant</input>
+    <input type="radio" name="edit" value="Mass">Mass Of Box</input>
+    <br>
+    <br>
+    <button onclick="increase()" style="margin: 5px;">Increase</button>
+    <button onclick="decrease()" style="margin: 5px;">Decrease</button>
+	 <p id="mp"> <u>SPRING EXPERIMENT</u></p>
+	</div>
+	<div id="outline">
+  <div id="v1"></div>
+  <!-- <div id="v2"></div> -->
+  <div id="v3"></div>
+  <div id="l1"></div>
+  <div id="l2"></div> 
+  <div id="l3"></div>
+  </div>
+</body>
+</html>

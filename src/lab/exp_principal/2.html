@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="exp9.css">
+</head>
+
+<html>
+<body>
+    <p id="mp">PRINCIPAL STRESSES EXPERIMENT</p>
+	<div id="final">
+	<button id="bxx">0</button>
+	<button id="bxy">0</button>
+	<button id="bxz">0</button>
+	<button id="byx">0</button>
+	<button id="byy">0</button>
+	<button id="byz">0</button>
+	<button id="bzx">0</button>
+	<button id="bzy">0</button>
+	<button id="bzz">0</button>
+    </div>
+    <script src=2.js></script>
+    <script src=three.min.js></script>
+    <script src=1.js></script>
+	<div class="slidecontainer">
+    <input type="range" min="-50" max="50" value="0" class="sliderXX" id="myRangeXX">
+    <input type="range" min="-50" max="50" value="0" class="sliderXY" id="myRangeXY">
+    <input type="range" min="-50" max="50" value="0" class="sliderXZ" id="myRangeXZ">
+    <input type="range" min="-50" max="50" value="0" class="sliderYX" id="myRangeYX">
+    <input type="range" min="-50" max="50" value="0" class="sliderYY" id="myRangeYY">
+    <input type="range" min="-50" max="50" value="0" class="sliderYZ" id="myRangeYZ">
+    <input type="range" min="-50" max="50" value="0" class="sliderZX" id="myRangeZX">
+    <input type="range" min="-50" max="50" value="0" class="sliderZY" id="myRangeZY">
+    <input type="range" min="-50" max="50" value="0" class="sliderZZ" id="myRangeZZ">
+    <input type="range" min="0" max="360" value="0" class="sliderX" id="myRangeX">
+    <input type="range" min="0" max="360" value="0" class="sliderY" id="myRangeY">
+    <input type="range" min="0" max="360" value="0" class="sliderZ" id="myRangeZ">
+    <p id="x">ThetaX: <span id="demoX"></span></p>   
+    <p id="y">ThetaY: <span id="demoY"></span></p>
+    <p id="z">ThetaZ: <span id="demoZ"></span></p>
+    <p id="xx">SigmaXX: <span id="demoXX"></span></p>   
+    <p id="xy">SigmaXY: <span id="demoXY"></span></p>
+    <p id="xz">SigmaXZ: <span id="demoXZ"></span></p>
+    <p id="yx">SigmaYX: <span id="demoYX"></span></p>
+    <p id="yy">SigmaYY: <span id="demoYY"></span></p>
+    <p id="yz">SigmaYZ: <span id="demoYZ"></span></p>
+    <p id="zx">SigmaZX: <span id="demoZX"></span></p>
+    <p id="zy">SigmaZY: <span id="demoZY"></span></p>
+    <p id="zz">SigmaZZ: <span id="demoZZ"></span></p>
+    <p id="dxx">Sigma'XX</p>
+    <p id="dxy">Sigma'XY</p>
+    <p id="dxz">Sigma'XZ</p>
+    <p id="dyx">Sigma'YX</p>
+    <p id="dyy">Sigma'YY</p>
+    <p id="dyz">Sigma'YZ</p>
+    <p id="dzx">Sigma'ZX</p>
+    <p id="dzy">Sigma'ZY</p>
+    <p id="dzz">Sigma'ZZ</p>    
+<script>
+    	var axx=0;
+    	var axy=0;
+    	var axz=0;
+    	var ayx=0;
+    	var ayy=0;
+    	var ayz=0;
+    	var azx=0;
+    	var azy=0;
+    	var azz=0;
+        var lx=0;
+        var ly=0;
+        var lz=0;
+         
+        
+        var sliderXX = document.getElementById("myRangeXX");
+        var outputXX = document.getElementById("demoXX");
+        sliderXX.oninput = function() {
+                        outputXX.innerHTML = this.value;
+                                  axx=this.value;  
+                                  animate(lx,ly,lz);
+                                  calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                                    }
+
+       	var sliderYY = document.getElementById("myRangeYY");
+        var outputYY = document.getElementById("demoYY");
+        sliderYY.oninput = function() {
+                        outputYY.innerHTML = this.value;
+                                    ayy=this.value;  
+                                    animate(lx,ly,lz);
+                                    calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                                    }
+
+        var sliderZZ = document.getElementById("myRangeZZ");
+        var outputZZ = document.getElementById("demoZZ");
+        sliderZZ.oninput = function() {
+                        outputZZ.innerHTML = this.value;
+                                    azz=this.value;  
+                                   animate(lx,ly,lz);
+                                    calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                                	}
+                                                                
+        var sliderYX = document.getElementById("myRangeYX");
+        var outputYX = document.getElementById("demoYX");
+        var sliderXY = document.getElementById("myRangeXY");
+        var outputXY = document.getElementById("demoXY");
+        sliderXY.oninput = function() {
+                        outputXY.innerHTML = this.value;
+                        outputYX.innerHTML = this.value;
+                    	axy=this.value;
+                    	ayx=this.value;    
+                    	animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                    	}
+		sliderYX.oninput = function() {
+                        outputXY.innerHTML = this.value;
+                        outputYX.innerHTML = this.value;
+                    	ayx=this.value;
+                    	axy=this.value;
+                        animate(lx,ly,lz);
+                    	calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                    	}
+        var sliderZX = document.getElementById("myRangeZX");
+        var outputZX = document.getElementById("demoZX");            					         													
+        var sliderXZ = document.getElementById("myRangeXZ");
+        var outputXZ = document.getElementById("demoXZ");
+        sliderXZ.oninput = function() {
+                        outputXZ.innerHTML = this.value;
+                        outputZX.innerHTML = this.value;	
+                        axz=this.value;
+                    	azx=this.value;
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                        }                
+        sliderZX.oninput = function() {
+        				outputXZ.innerHTML = this.value;
+                        outputZX.innerHTML = this.value;
+                        azx=this.value;
+                    	axz=this.value;
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                        }                  
+    	var sliderZY = document.getElementById("myRangeZY");
+        var outputZY = document.getElementById("demoZY");            					         													
+        var sliderYZ = document.getElementById("myRangeYZ");
+        var outputYZ = document.getElementById("demoYZ");
+        sliderYZ.oninput = function() {
+                        outputYZ.innerHTML = this.value;
+                        outputZY.innerHTML = this.value;	
+                        ayz=this.value;
+                    	azy=this.value;
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                        }                
+        sliderZY.oninput = function() {
+        				outputYZ.innerHTML = this.value;
+                        outputZY.innerHTML = this.value;
+                        azy=this.value;
+                    	ayz=this.value;
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                        }
+       var sliderX = document.getElementById("myRangeX");
+        var outputX = document.getElementById("demoX");
+        sliderX.oninput = function() {
+                        outputX.innerHTML = this.value;
+                        lx=this.value;         
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                                    }
+       
+        var sliderY = document.getElementById("myRangeY");
+        var outputY = document.getElementById("demoY");
+        sliderY.oninput = function() {
+                        outputY.innerHTML = this.value;
+                        ly=this.value;         
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);}                                          
+         
+        var sliderZ = document.getElementById("myRangeZ");
+        var outputZ = document.getElementById("demoZ");
+        sliderZ.oninput = function() {
+                        outputZ.innerHTML = this.value;
+                        lz=this.value;         
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);} 
+
+
+    </script>
+</div> 
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script>
+function graph() {
+
+var dps = []; // dataPoints
+var chart = new CanvasJS.Chart("chartContainer", {
+      title :{
+            text: "Stress v/s Strain"
+      },
+      axisY: {
+            includeZero: true,
+            title: "Stress (MPa)"
+      },
+      axisX: {
+            includeZero: true,
+            title: "Strain"
+      },      
+      data: [{
+            type: "line",
+            dataPoints: dps
+      }]
+});
+var j=0;
+var xVal = 0;
+var yVal = 0; 
+var updateInterval = 500;
+//var dataLength = 4;// number of dataPoints visible at any point
+var dp=[{xx:0.0,yy:0.0},{xx:0.00625,yy:41.73158},{xx:0.0125,yy:127.9769},{xx:0.025,yy:230.3583},{xx:0.03125,yy:233.6969},{xx:0.0375,yy:242.0432},{xx:0.04375,yy:229.8019},{xx:0.05,yy:229.5237},{xx:0.05625,yy:229.5237},{xx:0.075,yy:271.5335},{xx:0.1,yy:292.1211},{xx:0.125,yy:313.2651},{xx:0.15,yy:323.4198},{xx:0.175,yy:332.4616},{xx:0.2,yy:333.8527},{xx:0.20625,yy:333.8527}];
+var updateChart = function () {
+
+      
+      xVal = dp[j].xx;            
+      yVal = dp[j].yy;        
+      dps.push({
+                  x: xVal,
+                  y: yVal
+            });
+      
+
+      if (dps.length > 100) {
+            dps.shift();
+      }
+
+      chart.render();
+      j++;
+};
+
+updateChart();
+setInterval(function(){updateChart()}, updateInterval);
+
+}
+</script>
+</head>
+<body></body>
+</html>

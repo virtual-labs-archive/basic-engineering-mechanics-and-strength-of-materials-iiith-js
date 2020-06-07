@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="exp.js"></script>
+	<link rel="stylesheet" href="exp.css">
+ 
+</head>
+<body onload="startAnimation()">
+  <div id="chartContainer" style="height: 500px; width:500px;"></div>
+	<div class="container" id="con">
+  <img id="im1" src="images/blue.png">
+  <button id="bt1" onclick="restart()">Restart</button>
+  <button id="bt2" onclick="start_stop()">Start</button>	
+  <img id="im2" src="images/restart.png">
+  <img id="im3" src="images/start.png">
+	</div>
+	<div id="botbox">
+	    <button id="initial">Initial Reading</button>
+      <button id="final">Final Reading</button>
+      <button id="net">Strain Energy</button>      
+      <p id="pinitial">0 J</p>
+      <p id="pfinal">13 J</p>
+      <p id="pnet">13 J</p>
+  </div>
+	 <p id="mp"> <u>IMPACT TEST EXPERIMENT</u></p>
+	</div>
+	<div id="outline">
+  <div id="v1"></div>
+  <div id="v3"></div>
+  <div id="l1"></div>
+  <div id="l2"></div> 
+  <div id="l3"></div>
+  	</div>

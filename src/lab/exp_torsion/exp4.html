@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="exp4.js"></script>
+	<link rel="stylesheet" href="exp4.css">
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script>
+function graph() {
+
+var dps = []; // dataPoints
+var chart = new CanvasJS.Chart("chartContainer", {
+      title :{  
+            text: "Torque v/s AngleTwisted"
+      },
+      axisY: {
+            includeZero: true,
+            title: "Torque (N-m)"
+      },
+      axisX: {
+            includeZero: true,
+            title: "Angle Twisted (Degrees)"
+      },      
+      data: [{
+            type: "line",
+            dataPoints: dps
+      }]
+});
+var j=0;
+var xVal = 0;
+var yVal = 0; 
+var updateInterval = 500;
+//var dataLength = 4;// number of dataPoints visible at any point
+var dp=[{xx:0.0,yy:0.0},{xx:0.3,yy:0.2},{xx:1.2,yy:0.9},{xx:2.1,yy:1.7},{xx:2.7,yy:2.2},{xx:3.6,yy:3.1},{xx:4.5,yy:3.8},{xx:5.4,yy:4.6},{xx:6.3,yy:4.8},{xx:7.2,yy:5.3},{xx:8.1,yy:5.5},{xx:9,yy:5.6},{xx:9.9,yy:6},{xx:10.8,yy:5.8},{xx:11.7,yy:5.9},{xx:12.6,yy:5.8},{xx:13.5,yy:5.9},{xx:14.4,yy:5.9},{xx:18,yy:5.8},{xx:27,yy:5.8},{xx:36,yy:5.8},{xx:45,yy:5.9},{xx:51,yy:6},{xx:60,yy:6},{xx:150,yy:6.3},{xx:240,yy:6.3},{xx:600,yy:6.3},{xx:1500,yy:6.4},{xx:1800,yy:6.5},{xx:1887,yy:6.5}];
+var updateChart = function () {
+
+      
+      xVal = dp[j].xx;            
+      yVal = dp[j].yy;        
+      dps.push({
+                  x: xVal,
+                  y: yVal
+            });
+      
+
+      if (dps.length > 100) {
+            dps.shift();
+      }
+      if(j<29)
+      {chart.render();
+      j++;}
+};
+
+updateChart();
+setInterval(function(){updateChart()}, updateInterval);
+
+}
+</script>
+</head>
+<body>
+  <canvas id="myCanvas" width="500" height="500"></canvas>
+<script>
+ 
+var m; 
+var l;
+function jo(){l=1;
+    m = setInterval(yo,10);
+  }
+  var a=0;
+function yo(){
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+     
+     if(a==0)
+      {context.translate(400,410);
+      a=Math.PI/1000 ;}
+      else if(l<1300){
+        l++;
+      context.rotate(a);
+      context.beginPath();
+      context.arc(0, 0 , 40, 0, 2 * Math.PI, false);
+      context.closePath();
+
+      context.lineWidth = 5;
+      context.strokeStyle = "#333";
+      context.fillStyle = "grey";
+
+      context.fill();
+      context.stroke();
+
+      // second shape
+      context.beginPath();
+      context.moveTo(0, 0);
+      context.lineTo(30,-20);
+
+      context.closePath();
+      //context.lineWidth = 45;
+      context.strokeStyle = "darkblue";
+
+      context.stroke();
+
+      context.beginPath();
+      context.moveTo(0, 0);
+      context.lineTo(0,40);
+
+      context.closePath();
+      //context.lineWidth = 45;
+      context.strokeStyle = "darklblue";
+
+      context.stroke();
+       
+      context.beginPath();
+      context.moveTo(0, 0);
+      context.lineTo(-30,-20);
+
+      context.closePath();
+      //context.lineWidth = 45;
+      context.strokeStyle = "darkblue";
+
+      context.stroke();
+      a=Math.PI/1000;
+
+      }  
+      else if(l==1300){
+        clearInterval(m);
+      }
+}
+     
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+    context.beginPath();
+    context.rect(350, 360, 100, 100);
+    context.fillStyle = 'grey';
+    context.fill();
+    context.stroke();
+
+</script>
+<div id="chartContainer" style="height: 600px; width:750px;"></div>
+	<div class="container" id="con">
+  <img id="im1" src="Images/blue.png">
+  <button id="bt1" onclick="jo();start();graph()">Restart</button>
+  <button id="bt2" onclick="jo();start();graph()">Start</button>
+  <button id="bt3" onclick="myfun2()">Show-Graph</button>	
+  <img id="im2" src="Images/restart.png">
+  <img id="im3" src="Images/start.png">
+  <img id="im4" src="Images/show_graph.png">
+	</div>
+  <div id="right">
+    <div id="rleft1"></div>
+    <div id="rleft2"></div>
+    <div id="rright1"></div>
+    <div id="rright2"></div>
+    <div id="rtrapeze1"></div>
+    <div id="rtrapeze2"></div>
+    <div id="rright3"></div>
+    <div id="rright4"></div>
+    <div id="rright5"></div>
+    <div id="rright6"></div>
+    <div id="rright7"></div>
+    <div id="rright8"></div>
+    <div id="rright9"></div>
+    <div id="rright10"></div>
+    <div id="rright11"></div>
+    <div id="rright12"></div>
+    <div id="dot"></div>
+  </div>
+  <div id="botbox">
+      <button id="length">Length</button>
+      <button id="diameter">Diameter</button>
+      <button id="polar">Polar Moment of Inertia</button>
+      <button id="torque">Torque</button>
+      <button id="angle">Angle</button>
+      <button id="rigid">Modulus of Rigidity</button>      
+      <p id="plength">80 mm</p>
+      <p id="pdiameter">6 mm</p>
+      <p id="ppolar">1.27235E-10 m^4</p>
+      <p id="ptorque">0.0 N-m</p>
+      <p id="pangle">0.0 deg</p>
+      <p id="prigid">29.473138 GPa</p>      
+   <p id="mp"> <u>TORSION TEST EXPERIMENT</u></p>
+	</div>
+	<div id="outline">
+  <div id="v1"></div>
+  <div id="v2"></div>
+  <div id="v3"></div>
+  <div id="l1"></div>
+  <div id="l2"></div> 
+  <div id="l3"></div>
+  	</div>
+  </body>
+  </html>

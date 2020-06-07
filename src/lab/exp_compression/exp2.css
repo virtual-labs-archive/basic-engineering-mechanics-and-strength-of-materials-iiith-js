@@ -1,0 +1,294 @@
+#upa{
+position:absolute;	
+width:50px;
+height:120px;
+top: 140px;
+left:400px;
+}
+#upb{
+	position: absolute;
+	width:200px;
+	height:50px;
+	left: 325px;
+	top: 250px;
+}
+#downa{
+	position: absolute;
+	width:200px;
+	height:50px;
+	left: 325px;
+	top: 450px;
+}
+#downb{
+position:absolute;	
+width:50px;
+height:140px;
+top: 501px;
+left:400px;
+}
+#ltrapeze {
+	position: absolute;
+	border-bottom: 100px solid #555;
+	border-left: 0px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 60px;
+	left: 355px;
+	top: 350px;
+}
+#rtriangle{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 100px solid #555;
+	left: 414px;
+	top: 350px;
+}
+#rrec{
+	position: absolute;
+	height: 100px;
+   width: 60px;
+  background-color: #555;
+ left: 439px;
+	top: 350px;
+}
+#bt1 {
+  position: absolute;
+  left:10px;
+  top:5px;
+  background-color: #f1f1f1;
+  color: blue;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: right;
+}
+#bt2 {
+  position: absolute;
+  left:200px;
+  top:5px;
+  background-color: #f1f1f1;
+  color: blue;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: right;
+}
+#bt3 {
+  position: absolute;
+  left:390px;
+  top:5px;
+  background-color: #f1f1f1;
+  color: blue;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: right;
+}
+#im1 {
+	position: absolute;
+  width: 550px;
+  height: 60px;
+	left:0px;
+	top:0px;	
+}
+#im2{
+  position: absolute;
+  width: 20px;
+  height:20px;
+  left:15px;
+  top:34px;
+}
+#im3{
+  position: absolute;
+  width: 20px;
+  height:20px;
+  left:205px;
+  top:34px;
+}
+#im4{
+  position: absolute;
+  width: 20px;
+  height:20px;
+  left:395px;
+  top:34px;
+
+}
+#v1{
+  position:absolute;
+  height: 900px;
+  width: 10px;
+  left:100px;
+  top:30px;
+  background-color: #555;
+}
+#v2{
+  position:absolute;
+  height: 625px;
+  width: 10px;
+  left:730px;
+  top:30px;
+  background-color: #555;
+}
+#v3{
+  position:absolute;
+  height: 900px;
+  width: 10px;
+  left:1300px;
+  top:30px;
+  background-color: #555;
+}
+#l1{
+  position:absolute;
+  height: 10px;
+  width: 1200px;
+  left:100px;
+  top:30px;
+  background-color: #555;
+}
+#l2{
+  position:absolute;
+  height: 10px;
+  width: 1200px;
+  left:100px;
+  top:645px;
+  background-color: #555;
+}
+#l3{
+  position:absolute;
+  height: 10px;
+  width: 1200px;
+  left:100px;
+  top:920px;
+  background-color: #555;
+}
+#con {
+  position: absolute;
+  width: 500px;
+  left: 150px;
+  top: 50px;
+  height:50px;
+}
+#botbox{
+  position:absolute;
+  background-color: white ;
+  width: 950px;
+  height:50px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  top:650px;
+  left:150px;
+}
+#length{
+  position: absolute;
+  left:230px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#height{
+  position: absolute;
+  left:230px;
+  top:100px;
+  color:black;
+  background-color: white;
+}
+#load{
+  position: absolute;
+  left:610px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#deformation{
+  position: absolute;
+  left:800px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#stress{
+  position: absolute;
+  left:420px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#strain{
+  position: absolute;
+  left:610px;
+  top:100px;
+  color:black;
+  background-color: white;
+}
+#area{
+  position: absolute;
+  left:55px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#plength{
+  position: absolute;
+  left:295px;
+  top:37px;
+}
+#pheight{
+  position: absolute;
+  left:295px;
+  top:87px;
+}
+#pload{
+  position: absolute;
+  left:668px;
+  top:37px;
+}
+#pdeformation{
+  position: absolute;
+  left:890px;
+  top:37px;
+}
+#pstress{
+  position: absolute;
+  left:480px;
+  top:37px;
+}
+#pstrain{
+  position: absolute;
+  left:680px;
+  top:87px;
+}
+#parea{
+  position: absolute;
+  left:105px;
+  top:37px;
+}
+
+#mss{
+	position: absolute;
+	top:-75px;
+	left:5px;
+	font-size: 20px;
+}
+#mp{
+ position: absolute;
+  left:80px;
+  top:114px; 
+  font-size: 55px;
+}
+#chartContainer{
+  position: absolute;
+  height:500px;
+  width:500px;
+  left:750px;
+  top:125px;
+}
