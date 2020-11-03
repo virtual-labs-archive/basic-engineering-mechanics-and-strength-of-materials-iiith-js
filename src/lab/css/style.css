@@ -18,7 +18,8 @@ html {
 }
 
 p {
-    font-size: 16.5px;
+    font-size: 16px;
+    text-align: justify;
 }
 
 /*** Calendar **********************/
@@ -465,7 +466,7 @@ margin-top:120px;
 }
 .main-logo-a
 {
-	height: auto !important;
+	height: auto;
 	overflow: visible;
 	margin-left: 0px !important;
 	padding-bottom: 10px !important;
@@ -944,7 +945,7 @@ font-size: 30px;
 }
 
 .owl-theme .owl-buttons i{
-  margin-top: 2px;
+    margin-top: 2px;
 }
 
 //To move navigation buttons outside use these settings:
@@ -1016,14 +1017,14 @@ font-size: 30px;
 /*Labs page*/
 .sidebar-col-2
 {
-
+    margin-bottom : 15px;
 }
 
 .lab-list-col-10
 {
 	background: url("../images/devider-blue-v-o.png") repeat-y;
 	background-position: left top;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 
 .sidebar-a:HOVER, .text-h3-darkblue:HOVER {
