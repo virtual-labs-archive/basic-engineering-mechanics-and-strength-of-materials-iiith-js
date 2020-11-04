@@ -81,7 +81,7 @@ left:400px;
   text-align: right;
 }
 #bt3 {
-  position: absolute;
+  position: relative;
   left:390px;
   top:5px;
   background-color: #f1f1f1;
@@ -280,10 +280,12 @@ left:400px;
 	font-size: 20px;
 }
 #mp{
- position: absolute;
-  left:80px;
-  top:114px; 
-  font-size: 55px;
+
+position: relative;
+left: 80px;
+top: 148px;
+font-size: 46px;
+ 
 }
 #chartContainer{
   position: absolute;

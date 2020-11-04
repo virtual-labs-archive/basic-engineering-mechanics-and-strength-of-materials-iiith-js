@@ -43,7 +43,7 @@
   text-align: right;
 }
 #bt3 {
-  position: absolute;
+  position: relative;
   left:390px;
   top:5px;
   background-color: #f1f1f1;
@@ -133,7 +133,7 @@
   background-color: #555;
 }
 #mp{
-  position: absolute;
+  position: relative;
   left:650px;
   top:820px; 
   font-size: 33px;
