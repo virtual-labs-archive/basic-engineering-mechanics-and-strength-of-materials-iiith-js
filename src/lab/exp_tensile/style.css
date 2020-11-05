@@ -1,13 +1,13 @@
 #con {
   position: absolute;
   width: 500px;
-  left: 150px;
+  left: 17px;
   top: 50px;
   height:50px;
 }
 
 #im1 {
-  width: 550px;
+  width: 479px;
   height: 60px;
 	
 }
@@ -29,15 +29,15 @@
   position: absolute;
   width: 20px;
   height:20px;
-  left:395px;
+  left:332px;
   top:34px;
 
 }
 #chartContainer{
   position: absolute;
-  height:500px;
+  height:512px;
   width:500px;
-  left:750px;
+  left:526px;
   top:125px;
 }
 #bt1 {
@@ -67,17 +67,17 @@
   text-align: right;
 }
 #bt3 {
-  position: absolute;
-  left:390px;
-  top:5px;
-  background-color: #f1f1f1;
-  color: blue;
-  font-size: 16px;
-  padding: 16px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: right;
+ position: relative;
+left: 324px;
+top: -59px;
+background-color: #f1f1f1;
+color: blue;
+font-size: 16px;
+padding: 16px 30px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+text-align: right;
 }
 
 #dot1 {
@@ -88,7 +88,7 @@
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-    left: 382px;
+    left: 258px !important;
     top: 433px;
 }
 #dot2 {
@@ -98,7 +98,7 @@
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-    left: 382px;
+    left: 258px;
     top: 360px;
 }
  #xabox {
@@ -106,7 +106,7 @@
   height: 60px;
   background: linear-gradient(darkred, brown);
   position: absolute;
-            left: 313px;
+            left: 187px;
             top: 207px;
 
 }
@@ -115,7 +115,7 @@
   height: 40px;
   background: linear-gradient(brown, indianred);
             position: absolute;
-            left: 335px;
+            left: 210px;
             top: 262px;
 }
 #xcbox {
@@ -123,7 +123,7 @@
   height: 100px;
   background: linear-gradient(to left, #bbb 0%, #bbb 100%);
               position: absolute;
-            left: 368px;
+            left: 245px;
             top: 300px;
 }
     #yabox {
@@ -131,7 +131,7 @@
   height: 60px;
   background: linear-gradient(brown, darkred);
             position: absolute;
-            left: 313px;
+            left: 187px;
             top: 516px;
 }
         #ybbox {
@@ -139,7 +139,7 @@
   height: 40px;
   background: linear-gradient(indianred, brown);
             position: absolute;
-            left: 335px;
+            left: 211px;
             top: 478px;
 }
         #ycbox {
@@ -147,7 +147,7 @@
   height: 100px;
   background: linear-gradient(to left, #bbb 0%, #bbb 100%);
               position: absolute;
-            left: 368px;
+            left: 244px;
             top: 380px;
 }
     #xdt {
@@ -157,7 +157,7 @@
   height: 10px;
   width: 20px;
       position: absolute;
-            left: 368px;
+            left: 245px;
             top: 400px;
 }
     #ydt {
@@ -167,7 +167,7 @@
   height: 10px;
   width: 20px;
       position: absolute;
-            left: 368px;
+            left: 244px;
             top: 330px;
 }
 #matl{
@@ -177,13 +177,13 @@
 #botbox{
   position:absolute;
   background-color: white ;
-  width: 950px;
+  width: 865px;
   height:50px;
   border: 15px solid green;
   padding: 50px;
   margin: 20px;
   top:650px;
-  left:150px;
+  left:-3px;
 }
 #length{
   position: absolute;
@@ -222,14 +222,14 @@
 }
 #strain{
   position: absolute;
-  left:610px;
+  left:592px;
   top:100px;
   color:black;
   background-color: white;
 }
 #young{
   position: absolute;
-  left:800px;
+  left:725px;
   top:100px;
   color:black;
   background-color: white;
@@ -238,7 +238,7 @@
   position:absolute;
   height: 900px;
   width: 10px;
-  left:100px;
+  left:3px;
   top:30px;
   background-color: #555;
 }
@@ -246,7 +246,7 @@
   position:absolute;
   height: 625px;
   width: 10px;
-  left:730px;
+  left:499px;
   top:30px;
   background-color: #555;
 }
@@ -254,31 +254,31 @@
   position:absolute;
   height: 900px;
   width: 10px;
-  left:1300px;
+  left:1015px;
   top:30px;
   background-color: #555;
 }
 #l1{
   position:absolute;
   height: 10px;
-  width: 1200px;
-  left:100px;
+  width: 1018px;
+  left:3px;
   top:30px;
   background-color: #555;
 }
 #l2{
   position:absolute;
   height: 10px;
-  width: 1200px;
-  left:100px;
+  width: 1018px;
+  left:3px;
   top:645px;
   background-color: #555;
 }
 #l3{
   position:absolute;
   height: 10px;
-  width: 1200px;
-  left:100px;
+  width: 1018px;
+  left:3px;
   top:920px;
   background-color: #555;
 }
@@ -299,7 +299,7 @@
 }
 #pstrain{
   position: absolute;
-  left:668px;
+  left:653px;
   top:87px;
 }
 #pload{
@@ -314,12 +314,12 @@
 }
 #pyoung{
   position: absolute;
-  left:925px;
+  left:858px;
   top:87px;
 }
 #mp{
  position: absolute;
-  left:150px;
+  left:66px;
   top:114px; 
   font-size: 55px;
 }

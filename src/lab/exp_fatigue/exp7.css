@@ -8,17 +8,18 @@
 #botbox{
   position:absolute;
   background-color: white ;
-  width: 950px;
+  width: 790px;
   height:50px;
   border: 15px solid green;
   padding: 50px;
   margin: 20px;
   top:650px;
-  left:150px;
+  /*left:150px;*/
+padding-left: 77px;
 }
 #bt1 {
   position: absolute;
-  left:10px;
+  left:-96px;
   top:5px;
   background-color: #f1f1f1;
   color: blue;
@@ -31,7 +32,7 @@
 }
 #bt2 {
   position: absolute;
-  left:200px;
+  left:32px;
   top:5px;
   background-color: #f1f1f1;
   color: blue;
@@ -43,44 +44,44 @@
   text-align: right;
 }
 #bt3 {
-  position: absolute;
-  left:390px;
-  top:5px;
-  background-color: #f1f1f1;
-  color: blue;
-  font-size: 16px;
-  padding: 16px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: right;
+  position: relative;
+left: 165px;
+top: -59px;
+background-color: #f1f1f1;
+color: blue;
+font-size: 16px;
+padding: 16px 30px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+text-align: right;
 }
 #im1 {
-  position: absolute;
-  width: 550px;
-  height: 60px;
-  left:0px;
-  top:0px;  
+  position: relative;
+width: 456px;
+height: 60px;
+left: -124px;
+top: 0px;
 }
 #im2{
   position: absolute;
   width: 20px;
   height:20px;
-  left:15px;
+  left:-116px;
   top:34px;
 }
 #im3{
   position: absolute;
   width: 20px;
   height:20px;
-  left:205px;
+  left:41px;
   top:34px;
 }
 #im4{
   position: absolute;
   width: 20px;
   height:20px;
-  left:395px;
+  left:173px;
   top:34px;
 
 }
@@ -88,7 +89,7 @@
   position:absolute;
   height: 900px;
   width: 10px;
-  left:100px;
+  left:3px;
   top:30px;
   background-color: #555;
 }
@@ -96,7 +97,7 @@
   position:absolute;
   height: 625px;
   width: 10px;
-  left:730px;
+  left:492px;
   top:30px;
   background-color: #555;
 }
@@ -104,45 +105,46 @@
   position:absolute;
   height: 900px;
   width: 10px;
-  left:1300px;
+  left:1000px;
   top:30px;
   background-color: #555;
 }
 #l1{
   position:absolute;
   height: 10px;
-  width: 1200px;
-  left:100px;
+  width: 1000px;
+  left:3px;
   top:30px;
   background-color: #555;
 }
 #l2{
   position:absolute;
   height: 10px;
-  width: 1200px;
-  left:100px;
+  width: 1000px;
+  left:3px;
   top:645px;
   background-color: #555;
 }
 #l3{
   position:absolute;
   height: 10px;
-  width: 1200px;
-  left:100px;
+  width: 1000px;
+  left:3px;
   top:920px;
   background-color: #555;
 }
 #mp{
   position: absolute;
   top:800px;
-  left:300px;
+  /*left:300px;*/
   font-size: 55px;
+padding-left:57px;
 }
 #abox{
   position: absolute;
   height: 80px;
   width:320px ;
-  left: 280px;
+  left: 99px;
   top: 120px;
   background-color: lightgrey;
 }
@@ -150,7 +152,7 @@
   position: absolute;
   height:80px;
   width:320px ;
-  left: 280px;
+  left: 99px;
   top:270px ;
   background-color: grey;
 }
@@ -158,7 +160,7 @@
   position: absolute;
   height:30px;
   width:80px ;
-  left:400px;
+  left:228px;
   top:350px ;
   background-color: #555;
 }
@@ -167,7 +169,7 @@
   position: absolute;
   height:100px;
   width:250px ;
-  left:315px;
+  left:136px;
   top:530px ;
   background-color: grey;
 }
@@ -175,7 +177,7 @@
   position: absolute;
   height:70px;
   width:10px ;
-  left:300px;
+  left:124px;
   top:200px ;
   background-color: darkblue;
 }
@@ -183,7 +185,7 @@
   position: absolute;
   height:70px;
   width: 10px;
-  left: 570px;
+  left: 384px;
   top: 200px;
   background-color: darkblue;
 }
@@ -191,13 +193,13 @@
   position: absolute;
   height:250px;
   width:50px ;
-  left:415px;
+  left:243px;
   top:280px ;
   background-color: black;
 }
 #lptn{
   position: absolute;
-  left:340px;
+  left:164px;
   top:390px;
   height: 65px;
   width: 55px;
@@ -207,7 +209,7 @@
 }
 #rptn{
   position: absolute;
-  left:485px;
+  left:307px;
   top:390px;
   height: 65px;
   width: 55px;
@@ -219,13 +221,13 @@
   position: absolute;
   height:500px;
   width:500px;
-  left:750px;
+  left:501px;
   top:125px;
 }
 #para{
   position: absolute;
   top:140px;
-  left:425px;
+  left:239px;
 }
 #stress{
   position: absolute;

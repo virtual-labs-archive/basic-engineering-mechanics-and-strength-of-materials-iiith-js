@@ -1,13 +1,13 @@
 function rodM(){
 	var elem=document.getElementById("rod");
-	var xpos=867;
+	var xpos=434;
 	var ypos=150;
 	var id1=setInterval(frame1,250);
 	var id11 = setInterval(frame11, 220);
   	var id12 = setInterval(frame12, 220);
 	function frame1()
 	{
-		if (xpos == 879 && ypos == 162) {
+		if (xpos == 446 && ypos == 162) {
 
       clearInterval(id1);
     } else {

@@ -17,9 +17,9 @@ function frame13()
 		}
 	else if(ui==22)
 		{
-			document.getElementById("ltrapeze").style.left=351 + 'px';
-			document.getElementById("rtriangle").style.left=418 + 'px';
-			document.getElementById("rrec").style.left=443 + 'px';
+			document.getElementById("ltrapeze").style.left=150 + 'px';
+			document.getElementById("rtriangle").style.left=215 + 'px';
+			document.getElementById("rrec").style.left=240 + 'px';
 		}
 }
 var i=0;
