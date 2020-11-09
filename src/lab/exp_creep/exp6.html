@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
 	<script src="exp6.js"></script>
-	<link rel="stylesheet" href="exp6.css">
+	<link href="exp6.css" rel="stylesheet"/>
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <script>
 function graph() {
@@ -56,10 +59,10 @@ setInterval(function(){updateChart()}, updateInterval);
 }
 </script>
 </head>
-</head>
-<body>
+
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
   <div id="chartContainer" style="height: 500px; width:500px;"></div> 
-   <canvas id="myCanvas3" width="55" height="205"></canvas>
+   <canvas height="205" id="myCanvas3" width="55"></canvas>
    <script>
       var canvas = document.getElementById('myCanvas3');
       var context = canvas.getContext('2d');
@@ -69,7 +72,7 @@ setInterval(function(){updateChart()}, updateInterval);
       context.fill();
       context.stroke();
    </script>
-  <canvas id="myCanvas" width="700" height="300"></canvas>
+  <canvas height="300" id="myCanvas" width="700"></canvas>
   <script>
   var m;
   var l;
@@ -124,7 +127,7 @@ setInterval(function(){updateChart()}, updateInterval);
      
 }
    </script>
-   <canvas id="myCanvas2" width="600" height="600"></canvas>
+   <canvas height="600" id="myCanvas2" width="600"></canvas>
    <script>   
       var canvas = document.getElementById('myCanvas2');
       var context = canvas.getContext('2d');
@@ -144,7 +147,7 @@ setInterval(function(){updateChart()}, updateInterval);
       context.fillStyle = 'black';
       context.fill();
   </script>
-  <canvas id="myCanvas4" width="500" height="500"></canvas>
+  <canvas height="500" id="myCanvas4" width="500"></canvas>
   <script>
     var id1;
     var x;
@@ -173,13 +176,13 @@ setInterval(function(){updateChart()}, updateInterval);
       }
   </script>
 	<div class="container" id="con">
-  <img id="im1" src="Images/blue.png">
+  <img id="im1" src="Images/blue.png"/>
   <button id="bt1" onclick="strt();rodM();modLine();graph()">Restart</button>
   <button id="bt2" onclick="strt();rodM();modLine();graph()">Start</button>
   <button id="bt3" onclick="myfun2()">Show-Graph</button>	
-  <img id="im2" src="Images/restart.png">
-  <img id="im3" src="Images/start.png">
-  <img id="im4" src="Images/show_graph.png">
+  <img id="im2" src="Images/restart.png"/>
+  <img id="im3" src="Images/start.png"/>
+  <img id="im4" src="Images/show_graph.png"/>
   <div id="invis"></div>
 
 	</div>
@@ -187,7 +190,7 @@ setInterval(function(){updateChart()}, updateInterval);
    <div id="rod"></div> 
    <div id="weight"></div>
   </div>
-  <img id="wt" src="Images/1kg.jpg">
+  <img id="wt" src="Images/1kg.jpg"/>
   <div id="rmid">
    
    <div id="box"></div> 
@@ -212,7 +215,7 @@ setInterval(function(){updateChart()}, updateInterval);
 <p id="ptime">0 mins</p>
   </div>
 	 <p id="mp"> <u>CREEP TEST EXPERIMENT</u></p>
-	</div>
+	
 	<div id="outline">
   <div id="v1"></div>
   <div id="v2"></div>
@@ -221,5 +224,5 @@ setInterval(function(){updateChart()}, updateInterval);
   <div id="l2"></div> 
   <div id="l3"></div>
   	</div>
-  </body>
-  </html>
+  
+  </body></html>
