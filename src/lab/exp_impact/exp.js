@@ -3,13 +3,13 @@ var flag=0;
 function startAnimation() 
 {
     animationArea.start();
-    stand= new sq_component(700,250,100,300,"#FF0000");
-    arm= new sq_component(750,240,240,20,"#FFF000");
-    scale= new arc_component(750,250,50,Math.PI,0,"#555000");
-    stage= new sq_component(700,500,100,50,"#555000");
-    box= new sq_component(735,470,30,30,"#888000");
+    stand= new sq_component(700,250,100,300,"#0b366e");
+    arm= new sq_component(750,240,240,20,"#3d9c06");
+    scale= new arc_component(750,250,50,Math.PI,0,"#3c0055");
+    stage= new sq_component(700,500,100,50,"#3c0055");
+    box= new sq_component(735,470,30,30,"#a3a5f0");
     tip=new sq_component(840,240,20,40,"#FFF000");
-    needle=new sq_component(750,249,-40,2,"#FFF000");
+    needle=new sq_component(750,249,-40,2,"#3d9c06");
     hinge=new arc_component(750,250,10,0,2*Math.PI,"#000000");
 }
 var animationArea = {

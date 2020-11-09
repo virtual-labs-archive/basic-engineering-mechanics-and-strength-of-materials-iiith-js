@@ -1,20 +1,20 @@
 #con {
   position: absolute;
   width: 500px;
-  left: 450px;
+  left: 13px;
   top: 50px;
   height:50px;
 }
 #botbox{
   position:absolute;
   background-color: white ;
-  width: 950px;
+  width: 850px;
   height:50px;
-  border: 15px solid green;
+  border: 12px solid green;
   padding: 50px;
   margin: 20px;
   top:650px;
-  left:450px;
+  left:0px;
 }
 #bt1 {
   position: absolute;
@@ -31,7 +31,7 @@
 }
 #bt2 {
   position: absolute;
-  left:200px;
+  left:152px;
   top:5px;
   background-color: #f1f1f1;
   color: blue;
@@ -43,8 +43,8 @@
   text-align: right;
 }
 #bt3 {
-  position: absolute;
-  left:390px;
+  position: relative;
+  left:271px;
   top:5px;
   background-color: #f1f1f1;
   color: blue;
@@ -57,7 +57,7 @@
 }
 #im1 {
   position: absolute;
-  width: 550px;
+  width: 425px;
   height: 60px;
   left:0px;
   top:0px;  
@@ -73,14 +73,14 @@
   position: absolute;
   width: 20px;
   height:20px;
-  left:205px;
+  left:163px;
   top:34px;
 }
 #im4{
   position: absolute;
   width: 20px;
   height:20px;
-  left:395px;
+  left:279px;
   top:34px;
 
 }
@@ -88,7 +88,7 @@
   position:absolute;
   height: 900px;
   width: 10px;
-  left:300px;
+  left:3px;
   top:30px;
   background-color: #555;
 }
@@ -96,7 +96,7 @@
   position:absolute;
   height: 625px;
   width: 10px;
-  left:1030px;
+  left:484px;
   top:30px;
   background-color: #555;
 }
@@ -104,56 +104,57 @@
   position:absolute;
   height: 900px;
   width: 10px;
-  left:1600px;
+  left:1001px;
   top:30px;
   background-color: #555;
 }
 #l1{
   position:absolute;
   height: 10px;
-  width: 1300px;
-  left:300px;
+  width: 1008px;
+  left:3px;
   top:30px;
   background-color: #555;
 }
 #l2{
   position:absolute;
   height: 10px;
-  width: 1300px;
-  left:300px;
+  width: 1008px;
+  left:3px;
   top:645px;
   background-color: #555;
 }
 #l3{
   position:absolute;
   height: 10px;
-  width: 1300px;
-  left:300px;
+  width: 1008px;
+  left:3px;
   top:920px;
   background-color: #555;
 }
 #mp{
   position: absolute;
-  left:650px;
+  /*left:650px;*/
   top:820px; 
   font-size: 33px;
+padding-left:214px;
 
 }
 #myCanvas{
   position: absolute;
-  left:300px;
+  left:-134px;
   top:100px;
 
 }
 #myCanvas2{
   position: absolute;
-left:490px;
+left:54px;
   top:500px;
 
 }
 #myCanvas3{
   position: absolute;
-left:579px;
+left:144px;
   top:320px;
 
 }
@@ -161,7 +162,7 @@ left:579px;
 position:absolute;
   height: 320px;
   width: 3px;
-  left:867px;
+  left:434px;
   top:150px;
   background-color: black;
 }
@@ -169,14 +170,14 @@ position:absolute;
 position:absolute;
   height: 60px;
   width: 25px;
-  left:633px;
+  left:198px;
   top:295px;
   background-color: black;
 
 }
 #circle{
   position:absolute;
-  left:639px;
+  left:204px;
   top:304px;
   height: 10px;
   width: 10px;
@@ -189,14 +190,14 @@ position:absolute;
 position:absolute;
   height: 85px;
   width: 3px;
-  left:643px;
+  left:209px;
   top:320px;
   background-color: black;
 }
 #myCanvas4{
-  position: absolute;
+  position: relative;
   top:300px;
-  left:400px;
+  left:-44px;
 }
 #thick{
   position: absolute;
@@ -286,7 +287,7 @@ position:absolute;
   position: absolute;
   height:500px;
   width:500px;
-  left:1050px;
+  left:496px;
   top:125px;
 }
 #invis{
@@ -299,6 +300,6 @@ position:absolute;
 }
 #wt{
   position:absolute;
-  left:820px;
+  left:380px;
   top:450px;
 }

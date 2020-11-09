@@ -30,11 +30,11 @@ function myfun1()
   	b++;	
   if (pos2 == 310) {
       	pos2=350;	
-    	elem3.style.left=370 + 'px';
-    	elem4.style.left=455 + 'px';
+    	elem3.style.left=203 + 'px';
+    	elem4.style.left=280 + 'px';
     } else {
-    	elem3.style.left=340 + 'px';
-    	elem4.style.left=485 + 'px';
+    	elem3.style.left=164 + 'px';
+    	elem4.style.left=307 + 'px';
       pos2--; 
       elem2.style.top = pos2 + 'px'; 
     }

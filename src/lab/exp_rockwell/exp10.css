@@ -8,7 +8,7 @@
 #botbox{
   position:absolute;
   background-color: white ;
-  width: 950px;
+  width: 620px;
   height:50px;
   border: 15px solid green;
   padding: 50px;
@@ -91,14 +91,14 @@
   position:absolute;
   height: 900px;
   width: 10px;
-  left:1300px;
+  left:953px;
   top:30px;
   background-color: #555;
 }
 #l1{
   position:absolute;
   height: 10px;
-  width: 1200px;
+  width: 863px;
   left:100px;
   top:30px;
   background-color: #555;
@@ -106,7 +106,7 @@
 #l2{
   position:absolute;
   height: 10px;
-  width: 1200px;
+  width: 863px;
   left:100px;
   top:645px;
   background-color: #555;
@@ -114,7 +114,7 @@
 #l3{
   position:absolute;
   height: 10px;
-  width: 1200px;
+  width: 863px;
   left:100px;
   top:920px;
   background-color: #555;
@@ -183,13 +183,13 @@
 }
 #mp{
   position: absolute;
-  top:800px;
-  left:240px;
-  font-size: 45px;
+top: 829px;
+left: 240px;
+font-size: 32px;
 }
 #p1{
   position: absolute;
   top:25px;
-  left:230px;
-  font-size: 35px;
+  left:19px;
+  font-size: 34px;
 }
