@@ -135,7 +135,7 @@
 #mp{
   position: absolute;
   /*left:650px;*/
-  top:820px; 
+  top:825px; 
   font-size: 33px;
 padding-left:214px;
 
@@ -250,37 +250,37 @@ position:absolute;
 }
 #pthick{
   position: absolute;
-  left:290px;
+  left:295px;
   top:37px;
 }
 #pbreadth{
   position: absolute;
-  left:290px;
+  left:295px;
   top:87px;
 }
 #pload{
   position: absolute;
-  left:730px;
+  left:735px;
   top:37px;
 }
 #ptemp{
   position: absolute;
-  left:900px;
+  left:906px;
   top:37px;
 }
 #pstress{
   position: absolute;
-  left:500px;
+  left:505px;
   top:37px;
 }
 #pextension{
   position: absolute;
-  left:690px;
+  left:696px;
   top:87px;
 }
 #ptime{
   position: absolute;
-  left:105px;
+  left:108px;
   top:37px;
 }
 #chartContainer{
