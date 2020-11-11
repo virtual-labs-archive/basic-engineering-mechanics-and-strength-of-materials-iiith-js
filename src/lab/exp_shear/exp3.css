@@ -8,7 +8,7 @@
 #botbox{
   position:absolute;
   background-color: white ;
-  width: 600px;
+  width: 643px;
   height:50px;
   border: 15px solid green;
   padding: 50px;
@@ -323,6 +323,6 @@ position: absolute;
 #mp2{
   position: absolute;
   top:35px;
-  left:80px;
+  left:12px;
   font-size: 30px;
 }
